@@ -1,0 +1,158 @@
+﻿<Window x:Class="FilterDataApplication.ChooseFilterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterDataApplication"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStyle="None"
+       
+            ResizeMode="NoResize"
+            Background='Transparent'
+            AllowsTransparency="True"
+
+        Title="ChooseFilterScreen" Height="500.532" Width="776.398">
+
+    <Grid Background="#1b1b1b">
+
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="507" VerticalAlignment="Top" Width="180" Margin="0,0,0,-6.2"/>
+        <Grid  x:Name="Basic_Details" HorizontalAlignment="Left" Height="414" Margin="157,-2,-7,0" VerticalAlignment="Top" Width="626" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+
+            <Grid Margin="9,20,-9,-21" >
+
+                <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="White" BorderThickness="2" Foreground="White" Content="Height" Margin="65,84,471.6,312.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                    </CheckBox.Resources>
+                </CheckBox>
+
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Sync" Margin="210,85,327.6,310.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Wind Speed" Margin="50,154,477.6,241.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Fit Mode" Margin="419,120,118.6,274.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins" BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Velocity" Margin="274,120,243.6,277.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"  FontFamily="/Fonts/#Poppins" BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Stick Elevator" Margin="114,121,391.6,273.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Light - Ready" Margin="487,85,20.6,308.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins" BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Light - Copilot" Margin="332,85,179.6,310.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins" BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Autopilot" Margin="490,158,47.6,238.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Light - Eng Cut" Margin="329,158,178.6,238.4" RenderTransformOrigin="0.393,0.192">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+                <CheckBox  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="/Fonts/#Poppins"  BorderBrush="Black" BorderThickness="2" Foreground="White" Content="Light On" Margin="195,155,342.6,240.4">
+                    <CheckBox.Resources>
+                        <!--Unchecked state-->
+                        <SolidColorBrush x:Key="MaterialDesignCheckBoxOff" Color="White"/>
+                        <!--Checked state-->
+                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Green"/>
+                    </CheckBox.Resources>
+                </CheckBox>
+            </Grid>
+
+        </Grid>
+
+        <TextBlock FontFamily="/Fonts/#Poppins" FontWeight="DemiBold" TextAlignment="Center" FontSize="23" Foreground="{DynamicResource PrimaryHueDarkBrush}" Text="Choose Your Data" Margin="197,26,358,431.8"></TextBlock>
+        <Image Source="Images/checkBoxPic-removebg-preview.png" Margin="416,11,319,424.8" RenderTransformOrigin="0.48,1.068"/>
+        <Image HorizontalAlignment="Center" Source="Images/Bamza_108.png"  RenderTransformOrigin="0.48,1.068" Margin="35,360,643,22.8" Width="98"/>
+        <TextBlock FontFamily="/Fonts/#Poppins" FontWeight="DemiBold" TextAlignment="Center" FontSize="23" Foreground="{DynamicResource PrimaryHueDarkBrush}" Text="Choose Time Filter" Margin="194,218,353,244.8"></TextBlock>
+        <TextBlock  TextAlignment="Center" FontSize="15" Foreground="White" Text="Minimum Hour" Margin="199,348,425,119.8"></TextBlock>
+        <DatePicker Name="startingDate" Margin="204,295,422,169.8" Height="36"/>
+        <materialDesign:TimePicker WithSeconds="True" Name="startingHour" Margin="200,366,422,98.8" Height="36">
+
+        </materialDesign:TimePicker>
+        <TextBlock  TextAlignment="Center" FontSize="15" Foreground="White" Text="Maximm Hour" Margin="589,347,35,128.8"></TextBlock>
+
+        <materialDesign:TimePicker WithSeconds="True" Name="endigHour" Margin="594,370,28,94.8" Height="36">
+        </materialDesign:TimePicker>
+            
+        <DatePicker Name="endingDate" Margin="596,296,30,168.8" Height="36"/>
+        <TextBlock  TextAlignment="Center" FontSize="15" Foreground="White" Text="Starting Date" Margin="205,268,419,199.8"/>
+        <TextBlock  TextAlignment="Center" FontSize="15" Foreground="White" Text="Ending Date" Margin="592,264,32,211.8" RenderTransformOrigin="0.512,0.115"/>
+        <Button Click="SubmitProperties_Click"  BorderBrush="Black"     Background="#32a74f" Foreground="Black"
+                        Margin="388,437,206,16.8" x:Name="SubmitProperties" Style="{StaticResource MaterialDesignFlatMidBgButton}"
+                         materialDesign:ShadowAssist.ShadowDepth="Depth0"
+                        Height="Auto" materialDesign:ButtonAssist.CornerRadius="10"
+                        FontSize="18" FontFamily="/Fonts/#Poppins"   Content="Submit Fillter"
+                        />
+
+        <Image Source="Images/datafilter-300x150-removebg-preview.png" Margin="38,3,648,400.8" RenderTransformOrigin="0.618,0.708"/>
+    </Grid>
+
+</Window>
